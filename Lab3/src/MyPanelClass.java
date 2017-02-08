@@ -69,9 +69,9 @@ public void paintComponent(Graphics g)
         g.fillPolygon(q);
         
         Polygon s = new Polygon();
-        s.addPoint(x1+70, y1+170/4);
-        s.addPoint(x1+280, y2-200);
-        s.addPoint(x1+280, y2-150);
+        s.addPoint(x1+70, y2-90);
+        s.addPoint(x1+279, y2-200);
+        s.addPoint(x1+279, y2-150);
         g.setColor(Color.WHITE);
         g.fillPolygon(s);
         
