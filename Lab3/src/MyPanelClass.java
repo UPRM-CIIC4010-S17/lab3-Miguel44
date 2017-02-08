@@ -47,25 +47,36 @@ public void paintComponent(Graphics g)
 
         //Paint the background
 
-        g.setColor(Color.LIGHT_GRAY);
-//
-//        g.fillRect(x1, y1, width+1, height+1);
-//
+        g.setColor(Color.RED);
+
+        g.fillRect(x1, y1, width+1, height+1);
+
 //        g.setColor(Color.RED);
 //
 //        g.drawRect(x1, y1, width, height);
 //        
-//        g.setColor(Color .GREEN);
-//        
-//        g.drawRect(x1+50,y2-120, width-100, height-100);
+        g.setColor(Color .BLACK);
+       
+        g.drawRect(x1+10,y2-280, width-130, height-170);
 //
-//        g.setColor(Color.WHITE);
-//
-//        	g.drawLine(x1, y1, x2, y2);
-//
-//        	g.setColor(Color.BLACK);
-//        	
-//        	g.drawLine(x1+getWidth(),y1, x2-getWidth(),y2);
+        g.setColor(Color.BLUE);
+        Polygon q = new Polygon();
+
+        q.addPoint(x1+10,y2-280);
+        q.addPoint(x1+90,y1+170/2);
+        q.addPoint(x1+10, y2-151);
+        g.setColor(Color.BLUE);
+        g.fillPolygon(q);
+        
+        Polygon s = new Polygon();
+        s.addPoint(x1+70, y1+170/4);
+        s.addPoint(x1+280, y2-200);
+        s.addPoint(x1+280, y2-150);
+        g.setColor(Color.WHITE);
+        g.fillPolygon(s);
+        
+
+        
 //        
 //        g.setColor(Color.BLUE);
 //
@@ -91,8 +102,8 @@ public void paintComponent(Graphics g)
         p2.addPoint(x1 + 47, y1 + 88);
         p2.addPoint(x1 + 34, y1 + 98);
         p2.addPoint(x1 + 38, y1 + 83);
-        g.setColor(Color.BLACK);
-        g.drawPolygon(p2);
+        g.setColor(Color.WHITE);
+        g.fillPolygon(p2);
     }
 
 }
